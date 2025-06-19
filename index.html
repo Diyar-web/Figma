@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><img class="logo" src="./img/A+ Studio.png" alt="LOGO" /></a>
+      <nav>
+        <div class="silk">
+          <a href="#">Home</a>
+          <a href="#">What We Do</a>
+          <a href="#">Service</a>
+          <a href="#">Project</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <section class="firstPicter marg">
+      <div class="text">
+        <h1>A Digital Product Agency</h1>
+        <p class="first">
+          Leading digital agency with solid design and development expertise. We
+          build readymade websites, mobile applications, and elaborate online
+          business services.
+        </p>
+      </div>
+      <div class="Picter">
+        <img src="./img/image 8.svg" alt="картинка офиса" />
+      </div>
+    </section>
+    <section class="OurClient marg">
+      <div class="text">
+        <h1>Our client</h1>
+        <p class="second">
+          Several selected clients, who already believe in our service.
+        </p>
+      </div>
+
+      <div class="Clients">
+        <img src="./img/Google Logo.png" alt="Google Logo" />
+        <img src="./img/Airbnb Logo.png" alt="Airbnb Logo" />
+        <img src="./img/Uber Eats Logo.png" alt="Uber Eats Logo" />
+        <img src="./img/Amazon Logo.png" alt="Amazon Logo" />
+      </div>
+    </section>
+    <section class="WeHelp marg">
+      <img src="./img/Rectangle 25.png" alt="" class="particle" />
+      <div class="text">
+        <h1 class="main-text">How can we help your Business ?</h1>
+        <p class="second-text">
+          We build readymade websites, mobile applications, and elaborate online
+          business services.
+        </p>
+      </div>
+      <div class="HowWeHelp cards">
+        <div class="card_up">
+          <div class="card">
+            <img src="./img/box-search 1.png" alt="idia" />
+            <h1 class="top">Business Idea Planning</h1>
+            <p class="under-text">
+              We present you a proposal and discuss niffty-gritty like
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/empty-wallet 1.png" alt="idia" />
+            <h1 class="top">Financial Planning System</h1>
+            <p class="under-text">
+              Protocols apart from aengage models, pricing billing
+            </p>
+          </div>
+        </div>
+
+        <div class="card_down">
+          <div class="card">
+            <img src="./img/code-1 1.png" alt="idia" />
+            <h1 class="top">Development Website and App</h1>
+            <p class="under-text">
+              Communication protocols apart from engagement models
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/chart-square 1(1).png" alt="idia" class="part" />
+            <h1 class="top">Business Idea Planning</h1>
+            <p class="under-text">
+              We present you a proposal and discuss niffty-gritty like
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Video_text marg">
+      <div class="video">
+        <div
+          id="video-container"
+          style="
+            position: relative;
+            width: 680px;
+            height: 550px;
+            cursor: pointer;
+          "
+        >
+          <img
+            src="./img/unsplash_bzqU01v-G54.png"
+            alt=""
+            style="width: 100%; height: 100%; display: block"
+          />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 60px;
+              color: white;
+            "
+          >
+            ▶️
+          </div>
+        </div>
+      </div>
+
+      <div class="top_text">
+        <h1>Great Digital Product Agency since 2016</h1>
+        <p class="second-text">
+          Our Business Plan is a written document describing a company's core
+          business activites, Objectives, and how it plans to achieve its goals.
+          Our goal is to provide our client high quality Product with modern
+          idea accordingly their budgets and according thir reuirements.
+        </p>
+      </div>
+    </section>
+    <section class="Coontact marg">
+      <!-- <img src="./img/Rectangle 30.png" alt="" class="contact_img"> -->
+      <div class="subscribe-container">
+        <div class="subscribe-text">
+          <h1>Subscribe Newsletter</h1>
+          <p>I will update good news and promotion service not spam</p>
+        </div>
+        <form class="subscribe-form">
+          <img src="./img/Rectangle 31.png" alt="" class="subs_img" />
+          <div class="input_inner">
+            <input
+              type="email"
+              placeholder="Enter your email address.."
+              required
+            />
+            <button type="submit">Contact Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document
+      .getElementById("video-container")
+      .addEventListener("click", function () {
+        this.innerHTML = `
+      <iframe
+        width="580"
+        height="450"
+        src="https://www.youtube.com/embed/URHNbuKhuz8?autoplay=1&controls=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    `;
+      });
+  </script>
+</html>
